@@ -1,0 +1,20 @@
+{
+  "name": "node-scraper",
+  "version": "0.0.1",
+  "description": "Scraping web pages with node",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoineneff/node-scraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoineneff/node-scraper/issues"
+  },
+  "homepage": "https://github.com/antoineneff/node-scraper#readme"
+}
