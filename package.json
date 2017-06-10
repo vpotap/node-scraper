@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/antoineneff/node-scraper/issues"
   },
-  "homepage": "https://github.com/antoineneff/node-scraper#readme"
+  "homepage": "https://github.com/antoineneff/node-scraper",
+  "dependencies": {
+    "osmosis": "^1.1.4"
+  }
 }
