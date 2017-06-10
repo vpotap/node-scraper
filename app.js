@@ -1,18 +1,22 @@
 const fs = require('fs');
 const osmosis = require('osmosis');
 
+const results = [];
+
 // Search "node" keyword in google
 osmosis
 .get('https://www.google.fr/search?q=node')
-.find('div .rc')
+.find('.g')
 .set({
     'title' : 'h3.r a',
     'url'   : 'h3.r a@href'
 })
 .data(listing => {
-    // Store data in json file
-    fs.appendFile('data.json', JSON.stringify(listing), (err) => {
+    results.push(listing);
+})
+.done(() => {
+    fs.appendFile('data.json', JSON.stringify(results, null, 2), (err) => {
         if (err) throw err;
-        console.log('Data added to file');
+        console.log('Finished scraping, results added to file "data.json"');
     });
 });
